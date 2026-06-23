@@ -1,0 +1,37 @@
+/*.sister-concern{*/
+/*    padding:80px;*/
+/*}*/
+
+.sis-container{
+    padding:100px 0px;
+}
+
+.card{
+    border:none;
+    
+}
+
+.sis-cards{
+    margin-bottom:60px;
+}
+
+.sis-detail{
+    text-align:center;
+    padding:15px;
+    width: 260px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 0px auto -36px auto;
+    z-index: 1; 
+}
+
+.sis-detail .card-title{
+    font-weight:600;
+}
+
+.sis-detail .card-text{
+    color:#9C9C9C;
+}
+.sis-img-card{
+    padding: 20px;
+     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}

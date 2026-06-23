@@ -1,0 +1,237 @@
+@media screen and (max-width: 1470px) {
+
+}
+
+@media only screen and (max-width: 1440px) {
+
+}
+
+
+/* 150 */
+@media only screen and (max-width: 1200px) {
+    .heading {
+      font-size: 30px;
+    }
+    .prevention-care {
+        padding: 80px 0px 160px 0px;
+    }
+    .prevention-rec-container {
+        top: 152px;
+        width: 500px;
+        height: 500px;
+        border-radius: 50px 0px 50px 50px;
+   }
+   
+   .rec-rec {
+        position: absolute;
+        right: -29px;
+        top: 35px;
+   }
+   
+   .tab {
+        font-size: 13px;
+   }
+   
+   .l-img-container {
+        width: 235px;
+    }
+    
+    .l-news-card {
+        width: 300px;
+    }
+    
+    .l-news-circle:after {
+        top: -143px;
+        width: 263px;  
+        right: -119px;
+    }
+    .l-news-circle:before {
+        bottom: 9px;
+        width: 238px;
+        right: 55px;
+    }
+}
+
+/* not important */
+@media only screen and (max-width: 320px) {
+    
+}
+
+/* 90% screan */
+@media (min-width: 1700px) {
+
+}
+
+/* 80% screan */
+@media (min-width: 1920px) {
+    
+}
+
+/* Mobile screan */
+@media (max-width: 480px) {
+       /*---Footer---*/
+    .app-footer {
+        margin: auto;
+        width: auto !important;
+    }  
+}
+
+/* tablet screan */
+@media (max-width: 768px) {
+    
+    /*---Footer---*/
+    .app-footer {
+        margin: auto;
+        width: auto !important;
+    } 
+    
+    /*----- Home Page -----*/
+    
+    .banner-tag {
+        font-size: 30px;
+    }
+    
+    
+    /*===== Centre of Execellence Section =====*/
+    
+   .tab {
+        padding: 14px 20px;
+        font-size: 13px;
+        width: 100%;
+        border-radius: 0;
+    } 
+    
+    .tab::after {
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .panels {
+        border-radius: 0px;   
+    }
+    .centre-tab-content {
+        clip-path: none;
+    }
+    
+   .col-md-4.centre-of-excellence-img-container {
+        clip-path: none;
+    }    
+    
+    .col-md-8.centre-tab-content {
+        order: 2;
+    }
+    
+    /*===== Centre of Execellence Section =====*/ 
+    
+    /*===== Find Disease Section =====*/
+    .burst-12 {
+        margin: 14px 10px 14px 10px !important;
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .burst-12:before,.burst-12:after {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .burst-12 span {
+        font-size: 30px;
+    }
+    
+    .alphabet,.disease-container {
+        border-radius: 20px;
+    }
+    
+    /*===== Find Disease Section =====*/
+    
+    /*----- Home Page -----*/
+    
+    /*----- Doctor Detail Page -----*/
+    
+    
+    .dr-img-container.mb-3 {
+        /*margin: 130px auto 0px auto;*/
+        margin: 20px auto 0px auto;
+        border: 4px solid var(--blue);
+        /*width: 250px;*/
+    }  
+    .dr-name {
+        position: relative;
+        top: -51%;
+    }
+    
+    .book-appointment {
+        justify-content: center !important;
+        margin: 0px -30px -35px 0px !important;
+    }
+    /*----- Doctor Detail Page -----*/
+     /*----- Home Page -----*/
+     
+    /*----- About Us Page -----*/
+    /*----- About Us Page -----*/
+    
+    /*----- Founder's Page -----*/
+    .founder-col-one{
+        order:2;
+    }
+    
+    .founder-rectangle {
+        margin: 0px 0px 25px 0px;
+        width: 100%;
+        height: auto;
+        background: var(--blue);
+        border-radius: 0px 15px 15px 0px;
+    }
+    
+    .f-rec {
+        margin-top: 0px;
+        width: 40rem;
+    }
+    /*----- Founder's Page -----*/
+    /*----- Managing Team Page -----*/
+     .team-card:nth-child(1) {
+           order: 3;
+    } 
+     .team-card:nth-child(2) {
+           order: 2;
+    }
+    
+     .team-card:nth-child(3) {
+            order: 1;
+    }
+    
+    .team-card:nth-child(2),.team-card:nth-child(3) {
+        margin-top: 0px;
+    }
+    
+    .blue-bg {
+        height: auto;
+        padding: 20px;
+    }
+    /*----- Managing Team Page -----*/
+    /*----- Sister's Concern Page -----*/
+    .sis-container {
+        padding: 50px 0px;
+    }
+
+     .sis-detail {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 350px;
+    }
+    
+    .sis-cards {
+        margin-bottom: 100px;
+    }
+    
+    /*----- Sister's Concern Page -----*/
+    
+    
+    
+    
+    .contact-add {
+        padding: 30px 20px !important;
+    }
+}

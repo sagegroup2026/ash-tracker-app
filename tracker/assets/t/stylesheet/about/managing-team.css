@@ -1,0 +1,52 @@
+.blue-bg{
+  width: 100%;
+  height: 496px;
+  background: var(--blue);
+  opacity: 1;
+    padding: 166px 217px;
+}
+.blue-bg .heading{
+    color:#fff;
+    /*text-align:center;*/
+}
+
+.blue-bg p{
+    color:#fff;
+}
+
+.v1435_782{
+    width: 220px;
+    height: 220px;
+    background: url(https://apollosage.in/demo/assets/images/about/tablets.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.14000000059604645;
+    position: absolute;
+    top: 769px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.team-card{
+    border: none;
+    background: transparent;
+}
+
+.team-card img{
+       box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.team-card:nth-child(3){
+    margin-top: -300px;
+}
+.team-card:nth-child(2){
+    margin-top: -150px;
+}
+
+.team-card-body{
+    text-align:center;
+}
+.team-card-body .name{
+    font-weight:600;
+}

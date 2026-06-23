@@ -1,0 +1,55 @@
+.footer-overlay{
+        background: #000000cc;
+}
+.footer { 
+    background-image: url('https://content3.jdmagicbox.com/v2/comp/bhopal/h2/0755px755.x755.210928220506.y2h2/catalogue/apollo-sage-hospital-bawadia-kalan-bhopal-hospitals-r7nr71krbw.jpg');
+    width:100%;
+    background-size: cover; 
+    background-position: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    /*clip-path: polygon(50% 0%, 69% 20%, 100% 21%, 100% 100%, 0 100%, 0 21%, 29% 20%);*/
+    /*clip-path:polygon(50% 10%, 60% 18%, 100% 18%, 100% 100%, 0 100%, 0 18%, 40% 18%);*/
+    /*polygon(0 24%, 45% 24%, 48% 14%, 51% 12%, 54% 14%, 57% 24%, 100% 24%, 100% 100%, 0 100%, 0 50%)*/
+    clip-path:polygon(0 24%, 44% 24%, 48% 15%, 50% 14%, 53% 15%, 57% 24%, 100% 24%, 100% 100%, 0 100%, 0 50%);
+    /*clip-path: polygon(50% 9%, 60% 20%, 100% 24%, 100% 100%, 0 100%, 0 20%, 40% 20%);*/ 
+}
+.footer-logo{ display: flex; align-items: center; justify-content: center; padding: 113px 0px 0px 20px; } 
+.footer-logo img{ width:150px; } 
+.parent { filter: url('#goo'); overflow:hidden; /*position: fixed;*/ z-index: 1; } 
+.footer-container{
+    margin-top:40px;
+}
+.footer::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; /* background: linear-gradient(90deg, #00f2fe 0%,#ffff 100%); */ /* animation: shimmer 2s infinite linear; */ } 
+.footer-section { opacity: 0; transform: translateY(20px); animation: fadeInUp 0.6s forwards; } @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } } 
+.footer-section h3 { color:#ffff; margin-bottom: 20px; font-size: 1.2rem; position: relative; padding-bottom: 10px; } 
+.footer-section h3::after { content: ''; position: absolute; bottom: 0; left: 0; width: 50px; height: 2px; background:#ffff; transition: width 0.3s ease; } 
+.footer-section:hover h3::after { width: 100px; } 
+.footer-section p { 
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ffff; 
+    } 
+.footer-links { 
+    list-style: none; 
+} 
+.footer-links li { margin-bottom: 12px; } 
+.footer-links a { padding: .3rem 1rem; color:#ffff; text-decoration: none; transition: all 0.3s ease; display: inline-block; } 
+.footer-links a:hover { color:#ffff; transform: translateX(5px); } 
+.social-links { display: flex; gap: 15px; margin-top: 20px; } 
+.social-links a { width: 35px; height: 35px; border-radius: 50%; background: #333; display: flex; align-items: center; justify-content: center; color: #fff; text-decoration: none; transition: all 0.3s ease; } 
+.social-links a:hover { background:#ffff; transform: translateY(-3px); }
+.contact-info { display: flex; align-items: center; margin-bottom: 15px; color: #ffff; } 
+.contact-info i { margin-right: 10px; color:#ffff; } 
+.footer-bottom { text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #ffff; color: #fff; } 
+.newsletter-form { display: flex; gap: 10px; margin-top: 20px; } .newsletter-form input { flex: 1; padding: 10px; border: none; border-radius: 5px; background: #333; color: #fff; } 
+.newsletter-form button { padding: 10px 20px; border: none; border-radius: 5px; background:#ffff; color: #fff; cursor: pointer; transition: all 0.3s ease; } .newsletter-form button:hover { background: #0056b3; transform: translateY(-2px); } 
+@media (max-width: 768px) { 
+    .footer { clip-path:none; } 
+    ul.footer-links-ul { text-align: justify; } 
+    .footer-content { /*grid-template-columns: 1fr;*/ /*gap: 30px;*/ } .newsletter-form { flex-direction: column; } 
+    .footer-section { text-align: center; } 
+    .footer-section h3::after { left: 50%; transform: translateX(-50%); }
+    .social-links { justify-content: center; } 
+    .contact-info { justify-content: center; } }

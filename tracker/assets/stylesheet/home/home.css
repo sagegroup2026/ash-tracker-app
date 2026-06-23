@@ -1,0 +1,578 @@
+.py-100{
+    padding:100px 0px;
+}
+
+/*----- Banner Page -----*/
+
+    .hero-banner--one-col {
+     position: relative;
+    }
+    
+    .hero-banner--one-col .hero-banner {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .hero-banner--one-col .hero-banner__image {
+        bottom: 0;
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .hero-banner .banner-desktop {
+        display: block;
+    }
+    
+    .hero-banner__image article, .hero-banner__image div {
+        height: 100%;
+    } 
+    .hero-banner--one-col .hero-banner:after {
+        background: linear-gradient(180deg, rgba(0, 0, 0, .8), transparent 20%, transparent 50%, #007c9d);
+        bottom: 0;
+        content: "";
+        left: 0;
+        opacity: .9;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .visually-hidden {
+        overflow: hidden;
+        position: absolute !important;
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        width: 1px;
+        word-wrap: normal;
+    }
+
+    .hero-banner__image iframe, .hero-banner__image img, .hero-banner__image video {
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        pointer-events: none;
+        width: 100%;
+    }
+    .hero-banner--one-col:after {
+        background: rgba(0, 0, 0, .2);
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .field__item{
+        width:100%;
+        height:100%;
+    }
+    
+    @media only screen and (min-width: 62rem) {
+    .hero-banner .banner-mobile {
+        display: none;
+    }
+}
+/*----- Banner Page -----*/
+
+/*----- Service Section -----*/
+.service-home-bg{
+    position: relative;
+    /*background:url(https://apollosage.in/demo/assets/images/home/services-pattern-bg.png);*/
+    /*background-size:cover;*/
+}
+
+.service-home-bg img{
+    /*width: 453px;*/
+    margin: 0px 0px 0px auto;
+    display: block;
+}
+.s-contain{
+    position:absolute;
+    top:0;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding: 0px 0px;
+}
+
+.service-card{
+    border-radius:10px 0px 10px 0px;
+    border:2px solid var(--blue);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 10px;
+}
+
+.service-img-container {
+    width: 80px;
+}
+
+.service-img-container img{
+    width:100%;
+    height:100%;
+}
+
+.service-card-inner {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px 0px 10px 0px;
+}
+
+    .service-card-inner:after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0px;
+        right: 132px;
+        height: 0.5em;
+        border-top: 4px solid var(--yellow);
+    }
+    .service-card-inner::before{
+        display:inline-block;
+        font-family: FontAwesome;
+        content: '\f772';
+        position: absolute;
+        top: -34px;
+        right: -30px;
+        width: 60px;
+        height: 60px;
+        text-align:center;
+        border-radius: 50%;
+        border:4px solid #fff;
+        background-color: var(--blue);
+        color:#fff;
+        font-size:25px;
+    }
+/*----- Service Section -----*/
+
+
+/*----- About Section -----*/
+
+.home-about {
+    background: url(https://apollosage.in/demo/assets/images/home/services-pattern-bg.png);
+    background-size: cover;
+    padding: 200px 0px 0px 0px;
+}
+.home-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pt-100{
+    padding-top:100px;
+}
+
+.pt-50{
+    padding-top:50px;
+}
+
+.home-ab-img-container-one {
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom:20px;
+}
+
+.home-ab-img-container-one img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-ab-box{
+    background:#C6E6EF;
+    padding:20px 30px;
+    text-align:justify;
+    border-radius: 30px;
+}
+.home-ab-two-one{
+    margin-bottom:20px;
+}
+.home-ab-two-one-container{
+    width: 400px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#D7ECE7;
+    border-radius:20px;
+}
+
+.home-ab-two-one-img-container {
+    width: 350px;
+    margin: -50px 0px 0px 0px;
+}
+
+.home-ab-two-one-img-container img{
+    width:100%;
+    height:100%;
+}
+
+.home-ab-two-one-p-container{
+    text-align:center;
+    padding-left:20px;
+}
+
+.home-ab-two-p{
+    background:#E1E6EA;
+}
+
+/*----- About Section -----*/
+
+/*----- Prevention Section -----*/
+
+.prevention{
+    position:relative;
+}
+
+.prevention-care{
+    padding: 100px 0px 200px 0px;
+    background:#C6E6EF;
+    clip-path: polygon(0 0, 60% 0, 100% 20%, 100% 100%, 60% 80%, 0 80%);
+}
+
+.prevention-p{
+    text-align:justify;
+}
+.prevention-rec-container {
+    position: absolute;
+    right: -134px;
+    top: 95px;
+    /* z-index: 0; */
+    /* margin: -521px 0px 0px 1528px; */
+    width: 580px;
+    height: 600px;
+    border-radius: 50px 0px 50px 50px;
+    transform: rotate(45deg);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow: hidden;
+}
+
+.prevention-rec-container img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transform: skew(46deg, -43deg);
+}
+.rec-rec{
+    position: absolute;
+    right: 6px;
+    top: -30px;
+    transform: rotate(45deg);
+    /* left: 93%; */
+    width: 300px;
+    height: 300px;
+    background: var(--yellow);
+    border-radius: 50px;
+}
+/*----- Prevention Section -----*/
+
+/*----- Centre of Excellence Section -----*/
+.warpper{
+    padding-top:20px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* hide radio */
+.radio{
+  display:none;
+}
+
+/* TABS */
+
+.tab{
+    position: relative;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #f3fcff;
+    color: #000;
+    font-weight: 600;
+    border-radius: 26px 19px 0 0;
+    box-shadow: 0 0.5rem 0.8rem #00000040;
+    display: inline-block;
+    /*z-index: 1;*/
+}
+
+/* curved extension */
+.tab::after {
+    display: block;
+    /*z-index: 1;*/
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -8px;
+    width: 22px;
+    height: 100%;
+    background: #f3fcff;
+    border-radius: 8px 26px 0 0;
+    transform: skew(17deg);
+    box-shadow: rgba(0, 0, 0, 0.15) 2px 0px 2px 0px;
+}
+
+
+/* active tab */
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab {
+  background: var(--blue);
+  color:#fff;
+}
+
+#one:checked ~ .tabs #one-tab::after,
+#two:checked ~ .tabs #two-tab::after,
+#three:checked ~ .tabs #three-tab::after {
+  background: var(--blue);
+  z-index:1;
+}
+
+
+/* PANELS */
+.panels{
+    border-radius: 58px;
+    position: relative;
+    width: 100%;
+    /* border-radius: 0px; */
+    overflow: hidden;
+    padding: 0px;
+    background: transparent;
+     /*margin-top: 20px;*/
+}
+
+.panel{
+      display: none;
+    /* padding: 30px; */
+    position: relative;
+    border-radius: 40px;
+    z-index: 1;
+}
+
+/* ACTIVE PANEL */
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+  display:block;
+}
+
+/* AFTER BLUE BACKGROUND (BEHIND PANEL CONTENT) */
+#one:checked ~ .panels #one-panel::after,
+#two:checked ~ .panels #two-panel::after,
+#three:checked ~ .panels #three-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--blue);
+  z-index: -1;
+}
+
+
+   .centre-of-excellence-img-container {
+    margin-left: -12px;
+    padding: 0px;                                                                                                                    
+    background: red; 
+    clip-path: polygon(6% 30%, 6% 0, 100% 0, 100% 100%, 0 100%, 0 45%);
+    }
+    
+    .centre-of-excellence-img-container img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+    .department-text{
+        text-align:justify;
+    }
+    
+    .centre-tab-content{
+        padding: 30px 55px 30px 40px;
+        background:var(--white);
+        clip-path: polygon(0 0, 100% 0, 100% 30%, 97% 45%, 97% 100%, 0 100%);
+    }
+    
+/*----- Centre of Excellence Section -----*/
+
+/*----- Latest Event -----*/
+
+    .latest-event{
+        background:linear-gradient(180deg, rgba(230, 242, 245, 0), #e6f2f5 33%, #fdf2ec);
+        /*background:url('https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-70807.jpg?semt=ais_hybrid&w=740&q=80'); */
+        background-size:cover;
+    }
+
+    .latest-event{
+        position:relative;
+    }
+    .l-event-medicine-img {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .sub-head{
+        font-weight:600;
+        color:var(--blue);
+    }
+    
+    .l-img-container{
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        display:flex;
+        margin: -100px 0px 0px -30px;
+        clip-path: polygon(100% 0, 100% 90%, 23% 90%, 0 100%, 0 0);
+        width: 300px;
+        overflow: hidden;
+        border-radius: 7px;
+    }
+    
+     .l-img-container img{
+         width:100%;
+         height:100%;
+     }
+     
+    .l-date {
+        padding: 20px;
+        right: 0px;
+        position: absolute;
+        display: flex;
+        color: var(--blue);
+        gap: 5px;
+    }
+
+    .icon_blue{
+        color:var(--blue);
+        font-size:20px;
+    }
+    
+    .l-event-card{
+        width:400px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    
+    .l-event-row{
+        margin-top:170px;
+    }
+    
+    .l-title{
+        margin-top:0px;
+    }
+
+/*----- Latest Event -----*/
+
+/*----- Find Disease -----*/
+
+.disease-container{
+    padding:30px;
+    background:linear-gradient(0deg, #007c9da8, #007c9da8), url(https://blog.min.io/content/images/size/w2000/2020/02/Image-8.jpg);
+    background-size:cover;
+    border-radius:70px;
+}
+
+.find-head{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+.burst-12 {
+    position: relative !important;
+    margin: 14px 35px 14px 35px;
+    /* margin-right: 40px; */
+    background: var(--yellow);
+    width: 50px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.burst-12:before,
+.burst-12:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  background: var(--yellow);
+}
+.burst-12:before {
+  transform: rotate(30deg);
+}
+.burst-12:after {
+  transform: rotate(60deg);
+}
+.burst-12 span {
+    position: relative;
+    /* color: red; */
+    z-index: 1;
+    font-size: 35px;
+    font-weight: 600;
+    /* top: 0; */
+    /* left: 0; */
+    /* transform: translate(100%, 40%); */
+} 
+
+.alphabet{
+    border-radius: 57px;
+    padding: 20px 0px;
+    background: #ffffff91;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.disease-row-col-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.disease-search input{
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.disease-search button{
+    border-radius: 0px 5px 5px 0px;
+    padding: 10px 20px;
+    border: none;
+    margin-left: -5px;
+}
+
+.disease-search button i{
+    color:var(--blue);
+}
+
+.tt{
+    color:#fff;
+}
+/*----- Find Disease -----*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

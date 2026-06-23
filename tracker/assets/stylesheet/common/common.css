@@ -1,0 +1,121 @@
+:root {
+    --blue: #00799E;
+    --yellow: #FAB600;
+    --bg-white: #F6F9FA;
+    --white: #ffffff;
+    --black: #000;
+    --gray: #727371;
+    --red: #E31E24;
+
+}
+
+*{
+    /*margin: 0;*/ 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    overflow-x:hidden;
+    background:var(--bg-white);
+    font-family: "ClashDisplay-Regular", sans-serif;
+}
+
+.layout {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  display: block;
+
+  background: linear-gradient(
+    180deg,
+    rgba(230, 242, 245, 0),
+    #e6f2f5 33%,
+    #fdf2ec
+  );
+
+  margin: 0 auto;
+  max-width: 480px;
+
+  min-height: 100vh;      /* height hata di */
+  padding-bottom: 70px;  /* footer space */
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.sub-heading {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--blue);
+    text-transform: uppercase;
+} 
+
+.common-banner {
+    padding: 0px;
+    /*background: url('https://apollosage.in/demo/assets/images/common/banner.png'); */
+    background-size: cover;
+    position: relative;
+    padding-top: 10px;
+    overflow: hidden;
+    width:100%;
+}
+
+.common-banner-img img{
+    width:100%;
+}
+
+.heading{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size:40px;
+}
+
+.breadcrumb-box-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    text-align: center;
+}
+
+.banner-tag {
+    font-weight: 600;
+    font-size: 55px;
+}
+ 
+
+/*----- Common Button ------*/
+
+.common-btn{
+    padding:8px 14px;
+  background:var(--blue);
+  transform: skew(-31deg);
+}
+
+.explore-btn{
+        font-weight: 600;
+    font-size: 14px;
+  transform:skew(31deg);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  color:#fff;
+}
+
+.common-btn:hover{
+    background:var(--yellow); 
+}
+
+.btn:active {
+    /*color: var(--bs-btn-active-color);*/
+    background-color: none;
+    border-color: none;
+}
+/*----- Common Button ------*/

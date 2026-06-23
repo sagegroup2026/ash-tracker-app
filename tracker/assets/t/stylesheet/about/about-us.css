@@ -1,0 +1,188 @@
+.about-us{
+    background:var(--bg-white);
+}
+
+.about-box{
+    color:var(--white);
+    text-align:center;
+    background:var(--blue);
+}
+
+.about-box {
+    color: var(--white);
+    text-align: center;
+    background: var(--blue);
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.about-one-img {
+    margin-bottom: 24px;
+}
+
+.about-col-first img, .about-col-sec img, .about-box{
+    border-radius:20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.capsule{
+        margin: -27px 0px 0px 329px;
+    width: 120px;
+}
+
+.about-text{
+    text-align:justify;
+}
+
+.about-circle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:50px;
+    height:50px;
+    background:var(--blue);
+    border-radius:50%;
+}
+
+.about-circle i{
+    color:#fff;
+    font-size:20px;
+}
+
+.ab-call{
+    display:flex;
+    align-items:center;
+    gap:20px; 
+}
+
+.connect{
+    line-height:1;
+    font-size:25px;
+    font-weight:600;
+    color:#465D7C;
+}
+
+
+.connect span{
+    font-size:16px;
+    color:var(--blue);
+}
+
+.ab-section-two-one {
+    margin-top: 109px;
+}
+
+.operation-threatre{
+    width:574px;
+}
+
+.apollo-doctors-girl{
+    width: 508px;
+    margin-top: -652px;
+}
+
+.half-width-hr {
+  width: 50%; /* Adjust as needed */
+  margin-left: auto; /* Center the line */
+  margin-right: auto; /* Center the line */
+  border: none; /* Remove default border */
+  border-top: 1px solid #ccc; /* Add a custom border */
+}
+
+.hr-lines {
+  position: relative; /* Essential for positioning pseudo-elements */
+  text-align: center; /* Adjust for spacing */
+}
+
+.hr-lines::before,
+.hr-lines::after {
+  content: " "; /* Required for pseudo-elements to render */
+  display: block;
+  height: 2px; /* Thickness of the line */
+  width: 40%; /* Half the width of the parent element, adjust as needed */
+  position: absolute;
+  top: 50%; /* Vertically centers the line with the text */
+  background: black; /* Color of the line */
+}
+
+.hr-lines::before {
+  left: 0; /* Positions the line to the left */
+}
+
+.hr-lines::after {
+  right: 0; /* Positions the line to the right */
+}
+
+.partial-border-box {
+    margin: -569px 0px 0px 185px;
+    width: 425px;
+    border-bottom: 1px solid var(--yellow);
+    height: 500px;
+    border-top: 1px solid var(--yellow);
+    border-right: 1px solid var(--yellow);
+}
+
+.partial-border-box-two {
+    margin: -487px 0px 0px 184px;
+    width: 409px;
+    border-bottom: 1px solid var(--blue);
+    height: 500px;
+    border-top: 1px solid var(--blue);
+    border-right: 1px solid var(--blue);
+}
+
+.partial-border-box-three {
+    margin: -527px 0px 0px 218px;
+    width: 409px;
+    border-bottom: 1px solid var(--blue);
+    height: 500px;
+    border-top: 1px solid var(--blue);
+    border-right: 1px solid var(--blue);
+}
+
+.talkbubble {
+      width:590px;
+      background: #F2DDD9;
+      position: relative;
+      border-radius: 0px 10px 10px 10px; 
+}
+    
+.talkbubble p{
+        padding:10px;
+}
+    
+.talkbubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-right: 20px solid #F2DDD9;
+    border-bottom: 15px solid transparent;
+    
+}
+
+.talkbubble-one {
+    border-radius: 10px 10px 10px 0px; 
+    background: #D7ECE7;
+}
+
+.talkbubble-one:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -20px;
+    top: 0px;
+    bottom: auto;
+    border-top: 0px solid transparent;
+    border-left: 20px solid #D7ECE7;
+    border-right: 0px solid #D7ECE7;
+    border-bottom: 20px solid transparent;
+	/*border: 20px solid;*/
+	/*border-color:  #D7ECE7 transparent transparent transparent;*/
+   
+}

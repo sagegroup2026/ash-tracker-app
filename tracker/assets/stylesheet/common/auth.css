@@ -1,0 +1,97 @@
+.welcome-page{
+    background-size: cover !important;
+    background:url('https://admin.apollosage.in/tracker/assets/images/common/login-bg.png');
+  height:100%;
+  margin:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.app-phone{
+  border-radius:30px;
+  padding:30px 20px;
+}
+
+.app-primary{
+  color:#00799E;
+}
+
+.app-btn{
+  width: 100%;
+  padding: 12px;
+  background: #00799E;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgb(10 123 189 / 34%);
+}
+
+.app-btn:hover{
+  box-shadow: 0 10px 22px rgba(10, 123, 189, 0.45);
+  transform: translateY(-1px);
+}
+
+.app-btn:active{
+  transform: translateY(0);
+  box-shadow: 0 10px 20px rgb(10 123 189 / 34%);
+}
+
+.app-btn-outline{
+  background:#fff;
+  border:2px solid #00799E;
+  color:#00799E;
+}
+
+.app-input{
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1.5px solid #ddd;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.app-input:focus{
+  border-color: #00799E;
+  box-shadow: 0 0 0 3px rgba(10, 123, 189, 0.18);
+}
+
+
+/*.app-input{*/
+/*  width:100%;*/
+/*  padding:12px;*/
+/*  border-radius:8px;*/
+/*  border:1px solid #ddd;*/
+/*}*/
+
+.app-label{
+  font-size:14px;
+  font-weight:600;
+  margin-bottom:6px;
+  display:block;
+}
+
+.app-field{
+  margin-bottom:15px;
+}
+
+.app-center{
+  text-align:center;
+}
+
+.app-small{
+  font-size:13px;
+  color:#777;
+}
+
+button.close.b-cloo {
+    background: transparent;
+    border-radius: 40px;
+    padding: -3px;
+    border: none;
+    font-size: 20px;
+}
