@@ -18,7 +18,29 @@ class API extends CI_Controller {
 
 	public function get_lat_long_user()
 	{
-      echo "sanjay";
+       // Step 1: Read raw JSON from request body
+                $raw = file_get_contents("php://input");
+                
+                // Step 2: Decode JSON into an associative array
+                $data = json_decode($raw, true);
+                
+                // Step 3: Access your values safely
+                $accessToken = $data['access-token'] ?? '';
+                
+                $email = $data['email'] ?? '';
+                $latitude   = $data['latitude']   ?? '';
+                $longitude   = $data['longitude']   ?? '';
+                $created_by = $data['agent_id'] ?? '';
+                $created_at   = date('Y-m-d H:i:s');
+
+                if ($accessToken === '9074809402') {
+                   echo "sanjay done";
+                } else {
+            
+                $statusCode = '402';
+                $msg = 'Permission denied - Access token not matched';
+            }
 	}
 
+    /*END*/
 }    
