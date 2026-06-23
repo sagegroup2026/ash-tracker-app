@@ -20,3 +20,5 @@ class API extends CI_Controller {
 	{
       echo "sanjay";
 	}
+
+}    
