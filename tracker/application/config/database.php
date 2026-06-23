@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => 'mysqldatabase.c0pu4cscaxbf.us-east-1.rds.amazonaws.com',
 	'username' => 'admin',
 	'password' => 'Web#Sage#04',
 	'database' => 'ash-tracker',
