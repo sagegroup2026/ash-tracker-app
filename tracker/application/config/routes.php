@@ -238,3 +238,8 @@ $route['AllIPDOPDHC_DataShow'] = 'Sanjaytesting/AllIPDOPDHC_DataShow';
 /*------------- Bulk Upload  --------------*/
 $route['bulk-profile-upload'] = 'BulkUpload/bulkprofileUpload';
 $route['bulkprofileUpload/import_excel_ajax'] = 'BulkUpload/import_excel_ajax';
+
+
+
+/*---------------------------App API----------------------*/
+$route['api/get-lat-long-user'] = 'API/get_lat_long_user';
