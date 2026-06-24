@@ -87,11 +87,6 @@ function getAddressFromLatLong($lat, $lng)
 
     curl_close($ch);
 
-    // DEBUG RESPONSE
-    // echo "<pre>";
-    // print_r($response);
-    // exit;
-
     if($response){
 
         $result = json_decode($response, true);
