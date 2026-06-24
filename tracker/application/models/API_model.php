@@ -7,12 +7,12 @@
             parent:: __construct();
         }
      
-     function insertLatLong($email, $latitude, $longitude, $created_by, $created_at,$address){
+     function insertLatLong($email, $latitude, $longitude, $created_by, $created_at){
            $data = array(
                         'email_id'   => $email,
                         'latitude'   => $latitude,
                         'longitude'  => $longitude,
-                        'address'    => $address,
+                        //'address'    => $address,
                         'created_by' => $created_by,
                         'created_at' => $created_at
                     );

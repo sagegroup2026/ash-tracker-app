@@ -35,8 +35,8 @@ class API extends CI_Controller {
 
                 if ($accessToken === '9074809402') {
                    
-                $address = $this->getAddressFromLatLong($latitude, $longitude);
-                $dataSubmit = $this->API_model->insertLatLong($email, $latitude, $longitude, $created_by, $created_at,$address);
+                //$address = $this->getAddressFromLatLong($latitude, $longitude);
+                $dataSubmit = $this->API_model->insertLatLong($email, $latitude, $longitude, $created_by, $created_at);
                 $statusCode = '200';
                 $msg = 'Location Added Successfully';
 
@@ -56,50 +56,50 @@ class API extends CI_Controller {
 	}
 
 /* ==== GET ADDRESS FROM LAT LONG ==== */
-function getAddressFromLatLong($lat, $lng)
-{
-    // INVALID LAT LNG CHECK
-    if(empty($lat) || empty($lng)){
-        return '';
-    }
+// function getAddressFromLatLong($lat, $lng)
+// {
+//     // INVALID LAT LNG CHECK
+//     if(empty($lat) || empty($lng)){
+//         return '';
+//     }
 
-    $url = "https://nominatim.openstreetmap.org/reverse?lat=".$lat."&lon=".$lng."&format=json";
+//     $url = "https://nominatim.openstreetmap.org/reverse?lat=".$lat."&lon=".$lng."&format=json";
 
-    $ch = curl_init();
+//     $ch = curl_init();
 
-    curl_setopt_array($ch, [
+//     curl_setopt_array($ch, [
 
-        CURLOPT_URL => $url,
+//         CURLOPT_URL => $url,
 
-        CURLOPT_RETURNTRANSFER => true,
+//         CURLOPT_RETURNTRANSFER => true,
 
-        CURLOPT_SSL_VERIFYPEER => false,
+//         CURLOPT_SSL_VERIFYPEER => false,
 
-        CURLOPT_TIMEOUT => 20,
+//         CURLOPT_TIMEOUT => 20,
 
-        CURLOPT_HTTPHEADER => [
-            "User-Agent: MyTrackerApp/1.0 (developeradmin@gmail.com)"
-        ]
+//         CURLOPT_HTTPHEADER => [
+//             "User-Agent: MyTrackerApp/1.0 (developeradmin@gmail.com)"
+//         ]
 
-    ]);
+//     ]);
 
-    $response = curl_exec($ch);
+//     $response = curl_exec($ch);
 
-    curl_close($ch);
+//     curl_close($ch);
 
-    if($response){
+//     if($response){
 
-        $result = json_decode($response, true);
+//         $result = json_decode($response, true);
 
-        // FULL ADDRESS
-        if(isset($result['display_name'])){
+//         // FULL ADDRESS
+//         if(isset($result['display_name'])){
 
-            return $result['display_name'];
-        }
-    }
+//             return $result['display_name'];
+//         }
+//     }
 
-    return '';
-}
+//     return '';
+// }
 
 
 
