@@ -35,7 +35,7 @@ class API extends CI_Controller {
 
                 if ($accessToken === '9074809402') {
                    
-                $address = getAddressFromLatLong($latitude, $longitude);
+                $address = $this->getAddressFromLatLong($latitude, $longitude);
                 $dataSubmit = $this->API_model->insertLatLong($email, $latitude, $longitude, $created_by, $created_at,$address);
                 $statusCode = '200';
                 $msg = 'Location Added Successfully';
