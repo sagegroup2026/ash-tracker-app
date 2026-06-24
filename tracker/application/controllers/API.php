@@ -55,5 +55,58 @@ class API extends CI_Controller {
 
 	}
 
+/* ==== GET ADDRESS FROM LAT LONG ==== */
+function getAddressFromLatLong($lat, $lng)
+{
+    // INVALID LAT LNG CHECK
+    if(empty($lat) || empty($lng)){
+        return '';
+    }
+
+    $url = "https://nominatim.openstreetmap.org/reverse?lat=".$lat."&lon=".$lng."&format=json";
+
+    $ch = curl_init();
+
+    curl_setopt_array($ch, [
+
+        CURLOPT_URL => $url,
+
+        CURLOPT_RETURNTRANSFER => true,
+
+        CURLOPT_SSL_VERIFYPEER => false,
+
+        CURLOPT_TIMEOUT => 20,
+
+        CURLOPT_HTTPHEADER => [
+            "User-Agent: MyTrackerApp/1.0 (developeradmin@gmail.com)"
+        ]
+
+    ]);
+
+    $response = curl_exec($ch);
+
+    curl_close($ch);
+
+    // DEBUG RESPONSE
+    // echo "<pre>";
+    // print_r($response);
+    // exit;
+
+    if($response){
+
+        $result = json_decode($response, true);
+
+        // FULL ADDRESS
+        if(isset($result['display_name'])){
+
+            return $result['display_name'];
+        }
+    }
+
+    return '';
+}
+
+
+
     /*END*/
 }    
