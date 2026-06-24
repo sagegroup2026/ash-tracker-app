@@ -11,7 +11,7 @@ class API extends CI_Controller {
 	    parent::__construct();
 	    $this->load->database();
         $this->load->library('session');
-	    //S$this->load->model('API_model'); 
+	    $this->load->model('API_model'); 
         $this->load->helper('url');
       
 	}
@@ -34,12 +34,25 @@ class API extends CI_Controller {
                 $created_at   = date('Y-m-d H:i:s');
 
                 if ($accessToken === '9074809402') {
-                   echo "sanjay done";
+                   
+                $address = getAddressFromLatLong($latitude, $longitude);
+                $dataSubmit = $this->API_model->insertLatLong($email, $latitude, $longitude, $created_by, $created_at,$address);
+                $statusCode = '200';
+                $msg = 'Location Added Successfully';
+
+
+
                 } else {
             
                 $statusCode = '402';
                 $msg = 'Permission denied - Access token not matched';
             }
+
+            $return = array ('statusCode'=>$statusCode,'Msg'=>$msg);
+       
+             echo json_encode($return);
+
+
 	}
 
     /*END*/
